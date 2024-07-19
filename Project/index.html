@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\style.css">
+    <title>Desafio html css js 01</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>LOJA</h1>
+    </header>
+
+    <main>
+        <div class="loja">
+            <input placeholder="Nome do produto" type="text" id="nome" name="nome">
+            <input placeholder="Quantidade do produto" type="number" id="quantidade" name="quantidade">
+        
+            <button onclick="product.save()" id="BTN_01">ADICIONAR</button>
+        </div>
+
+        <div class="produtos">
+            <h2>Produtos</h2>
+            <span>Lista de produtos da loja</span>
+            
+            <div class="tabela">
+                <table border="1">
+                    <thead>
+                        <th>Id</th>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                        <th>Ações</th>
+                    </thead>
+                    <tbody id="tbody">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+<script defer src="js\app.js"></script>
+
+</html>
